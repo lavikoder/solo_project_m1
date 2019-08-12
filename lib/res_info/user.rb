@@ -7,7 +7,6 @@ class User
  def initialize(name)
    @name = name
    @kitchen = []
-   @kitchen << ingredients
  end
 
  def self.all
@@ -18,16 +17,15 @@ class User
     @@all << self
   end
 
-  def create_user(name)
+  def self.create_user(name)
    new_user = User.new(name)
    new_user.save
    new_user
   end
 
-  def ingredients
-    #this is what the user choses from the api or website
-  end
-
-
+  # def ingredients
+  #   #this is what the user choses from the api or website
+  #
+  # end
 
  end
