@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './lib/res_info'
+require_relative '../lib/res_info'
 
 ResInfo::CLI.new.display_header
